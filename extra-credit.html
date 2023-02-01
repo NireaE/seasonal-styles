@@ -100,12 +100,11 @@
 			var datetext = $('input[name=dateField]').val();//grab data from textbox
 			var formDate = new Date(datetext);//create a date from form input
 			var today = new Date();
-			
-			if(formDate > today)
+			if(formDate > today) 
 			{
-				alert(datetext + " is in the future!");
+				alert(datetext + " is in the future!" + formDate);
 			}else{
-				alert(datetext + " is in the past!");
+				alert(datetext + " is in the past!" + formDate + " " + today);
 			}
 		});
 	});
